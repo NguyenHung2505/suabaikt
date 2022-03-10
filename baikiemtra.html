@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<h2>bài tập 1 !</h2>-->
+<!--<h3> cách 1:( 'alert-hiển thị nội dung trên hộp thoại')</h3>-->
+<!--<br>-->
+<!--<h3> cách 2 : ('prompt-hiển thị ô chứa dữ liệu')</h3>-->
+<!--<br>-->
+<!--<button onclick ="khhtnd ()"> bấm vào htnd-cách 1</button>-->
+<!--<button onclick ="khhtcdl ()"> bấm vào htocdl-cách 2</button>-->
+<!--<script>-->
+<!--    function khhtnd (){-->
+<!--        alert('hiện thị nội dung');-->
+<!--    }-->
+<!--    function khhtcdl (){-->
+<!--        prompt('nội dung viết vào ô');-->
+<!--    }-->
+
+
+<!--</script>-->
+<!--<h2>bài tập 2+3</h2>-->
+<!--<br>-->
+<!--<h3>câu lệnh để nhận giá trị từ hộp thoại</h3>-->
+<!--<br>-->
+<!--<input type="text" id = "aa">-->
+<!--<input type="text" id = "ab">-->
+<!--<br>-->
+<!--<br>-->
+<!--<button onclick="cachtinh()">bấm vào (a) nhan b</button>-->
+<!--<button onclick="cachtinhm()">bấm vào (a) nhan a</button>-->
+<!--<br> <br>-->
+<!--<h1 id ="hkq"></h1>-->
+<!--<script>-->
+<!--let a =document.getElementById("aa")-->
+<!--let b =document.getElementById("ab")-->
+<!--let hkp2 =document.getElementById('hkq')-->
+<!--function cachtinh () {-->
+<!--    let s1 = a.value * b.value ;-->
+<!--    hkq.innerHTML = s1;-->
+<!--}-->
+<!--function cachtinhm () {-->
+<!--    let s2 = a.value * a.value ;-->
+<!--    hkq.innerHTML = s2;-->
+<!--}-->
+<!--</script>-->
+
+<!--<br>-->
+
+<!--<h2> bai tap 4</h2>-->
+<!--<h3>bt4a;b :</h3>-->
+<!--<br>-->
+<!--<input type="text" id = "a">-->
+<!--<input type="text" id = "b">-->
+<!--<p id="kqua"></p>-->
+<!--<button onclick="bam()">s vuong va a binh phuong</button>-->
+<!--<button onclick="bamm()">r vuong</button>-->
+<!--<button onclick="bammm()">a binh phuong b</button>-->
+<!--<script>-->
+<!--    let aa =document.getElementById('a');-->
+<!--    let kquanm =document.getElementById(kqua);-->
+<!--    let bb = document.getElementById(b);-->
+
+<!--    function bam () {-->
+<!--        let s = a.value * a.value;-->
+<!--        kqua.innerHTML = s-->
+<!--    }-->
+<!--    function  bamm () {-->
+<!--        let r = a.value * 4 ;-->
+<!--        kqua.innerHTML = r;-->
+<!--    }-->
+<!--    function bammm () {-->
+<!--        let ab = a.value ** b.value ;-->
+<!--        kqua.innerHTML = ab;-->
+<!--    }-->
+
+
+<!--</script>-->
+<!--<h3> bai tap 4c tinh tong tu a den b</h3>-->
+<!--<br>-->
+
+<!--<button id="btn7" onclick="baitap4c()" >Demo Bài tập 4c</button>-->
+<!--<h3 id="kq4c"></h3>-->
+
+<!--<script>-->
+<!--    function baitap4c(){-->
+<!--        let a = +prompt('Nhập a: ');-->
+<!--        let b = +prompt('Nhập b: ');-->
+<!--        let c ;-->
+<!--        if(a>b){-->
+<!--            c = (a + b) * (a - b + 1) / 2;-->
+<!--            document.getElementById('kq4c').innerHTML="Tổng các số từ b đến a = " + c;-->
+<!--        }else{-->
+<!--            c = (a + b) * (b - a + 1) / 2;-->
+<!--            document.getElementById('kq4c').innerHTML="Tổng các số từ a đến b = " + c;-->
+<!--        }-->
+<!--    }-->
+
+
+<!--</script>-->
+<!--<h3> 4d. Nhập vào a là năm, in ra thế kỷ</h3>-->
+<!--<button id="btn8" onClick="baitap4d()">Demo Bài tập 4d</button>-->
+<!--<h3 id="kq4d" style="color: blue"></h3>-->
+<!--<script>-->
+<!--    function baitap4d () {-->
+<!--        let a = +prompt('Nhập năm: ');-->
+<!--        let b = parseInt(a/100);-->
+<!--        if (b>0) {-->
+<!--            document.getElementById('kq4d').innerHTML= "Năm " + a + " thuộc thế kỷ " + (b + 1) ;-->
+<!--        }else{-->
+<!--            document.getElementById('kq4d').innerHTML= "Năm " + a + " thuộc thế kỷ " + (b - 1) * -1 + " trước Công Nguyên";-->
+<!--        }}-->
+
+
+
+<!--</script>-->
+
+<!--<h3>    4e. Nhập vào a, b, c kiểm tra a, b, c có phải là 3 cạnh của tam giác ko? và là tam giác gì? (thường?cân?vuông?thường?)</h3>-->
+<!--<button id="btn9" onclick="baitap4e()" >Demo Bài tập 4e</button>-->
+<!--<h3 id="kq4e" style="color: blue"></h3>-->
+<!--<script>-->
+<!--    function baitap4e(){-->
+<!--        let a = +prompt('Nhập cạnh a: ');-->
+<!--        let b = +prompt('Nhập cạnh b: ');-->
+<!--        let c = +prompt('Nhập cạnh c: ');-->
+<!--        let tinhchat;-->
+
+<!--        if (a+b>c && b+c>a && c+a>b) {-->
+<!--            if (a==b && a==c ){-->
+<!--                tinhchat = " là 3 cạnh của tam giác đều! ";-->
+<!--            }else if(a==b || a==c || b==c){-->
+<!--                tinhchat = " là 3 cạnh của tam giác cân! ";-->
+<!--            }else if((a * a == b * b + c * c) || (b * b == a * a + c * c) || (c * c == b * b + a * a)){-->
+<!--                tinhchat = " là 3 cạnh của tam giác vuông! ";-->
+<!--                if(a==b || a==c || b==c) {-->
+<!--                    tinhchat = " là 3 cạnh của tam giác vuông cân! ";-->
+<!--                }-->
+<!--            }-->
+<!--        }else{-->
+<!--            tinhchat = " không phải là 3 cạnh của 1 tam giác!";-->
+<!--        }-->
+<!--        document.getElementById('kq4e').innerHTML= "a = " + a + ", b = " + b +  ", c = " + c  + tinhchat;-->
+<!--    }-->
+<!--</script>-->
+
+
+
+</body>
+</html>
